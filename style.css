@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* 
+font-family: 'ADLaM Display', cursive;
+font-family: 'Black Ops One', cursive;
+*/
+
+:root{
+    --bgcolor: #161616;
+    --h1color: #E28712;
+    --transition: all .5s ease-in-out;;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    font-family: 'Black Ops One', cursive;
+    background-color: var(--bgcolor);
+    color: #fff;
+    height: 100vh;
+
+    background-image: url(https://img.wallscloud.net/uploads/thumb/764305546/0C685369-2D59-4881-ABC2-9AEA02E71CBD-1024x576-MM-80.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+
+
+/*! SOCIAL BAR START */
+
+.header__top{
+    display: flex;
+    background-color: red;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    
+    
+}
+
+.header__top__icons i{
+    margin-right: 20px;
+    
+    font-size: 24px;
+    transition: var(--transition);
+}
+
+.header__top__icons i:hover{
+    color: var(--h1color);
+}
+
+.header__top__logo{
+    font-size: 27px;
+    margin-right: 20px;
+    color: var(--h1color);
+    
+    
+}
+
+.header__top__text{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/*! SOCIAL BAR END */
+
+
+/* HEADER START */
+
+header{
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 75px;
+    z-index: 1;
+
+    
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    transition: var(--transition);
+}
+
+.navbar li a:hover{
+    letter-spacing: 2px;
+    color: #E28712;
+}
+
+/* HEADER END */
+
+
+
+
+/*! MAIN START  */
+
+.main__des{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.main__des__img{
+    width: 450px;
+}
+
+
+.main__des__text{
+    width: 50%;
+}
+
+/*! MAIN END  */
+
+
+
+/* TAGS START */
+
+.tags{
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    flex-wrap: wrap;
+}
+
+.tags__img{
+    width: 100%;
+}
+
+/* TAGS END */
+
+
+
+/*! MENU START */
+
+.menu{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    
+
+}
+
+.menu__left{
+    width: 50%;
+    
+}
+
+.menu__right{
+    width: 50%;
+}
+
+
+
+
+
+
+
+.menu__right__box{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+}
+
+.menu__left__top__text{
+    position: absolute;
+    text-align: center;
+}
+
+
+
+
+
+
+.menu__left__box{
+    height: 45%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+}
+
+.menu__right__top__text{
+    position: absolute;
+    text-align: center;
+}
+
+
+
+
+
+
+.menu__left__top{
+    margin-bottom: 30px;
+    height: 45%;
+}
+
+.menu__right__top{
+    margin-left: 30px;
+    height: 93%;
+}
+
+
+
+
+
+
+
+
+
+.menu__left__img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.menu__right__img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+.menu__left__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .5;
+    transition: var(--transition);
+}
+
+.menu__left__img img:hover{
+    opacity: .3;
+    transform: scale(1.1);
+}
+
+.menu__right__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .5;
+    transition: var(--transition);
+}
+
+.menu__right__img img:hover{
+    opacity: .3;
+    transform: scale(1.1);
+}
+
+
+.menu__left__top__text a{
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 10px 20px;
+}
+
+
+.menu__right__top__text a{
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 10px 20px;
+}
+
+
+
+/*! MENU END  */
+
+
+
+/* VIDEO START */
+
+.video__div{
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.video__img{
+    width: 450px;
+}
+
+.video__text{
+    width: 50%;
+    padding: 20px;
+}
+
+/* VIDEO END */
+
+
+footer{
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+
+
+@media (max-width:880px) {
+
+    .header__top__icons{
+        margin-top: 20px;
+    }
+
+    .header__top__text p{
+        margin-top: 10px;
+    }
+
+    header{
+        top: 130px;
+    }
+
+    .navbar{
+        gap: 20px;
+    }
+
+    .main__des{
+        display: block;
+        text-align: center;
+        margin-top: 250px;
+    }
+
+    .main__des__text{
+        width: 100%;
+    }
+
+    .tags{
+        margin-top: 250px;
+    }
+
+
+
+
+
+
+    .video__div{
+        display: block;
+        text-align: center;
+    }
+    .video__text{
+        width: 100%;
+    }
+
+    .video__img{
+        width: 50%;
+    }
+
+
+
+
+
+}
+
+
+
+@media (max-width: 700px)
+{
+    header{
+        top: 180px;
+    }
+
+    .main__des{
+        margin-top: 350px;
+    }
+
+    .main__des__img{
+        width: 50%;
+    }
+
+    .tags{
+        margin-top: 320px;
+    }
+
+
+
+
+
+    .menu{
+        display: block;
+    }
+
+    .menu__left__box{
+        height: 30%;
+        width: 100%;
+    }
+
+    .menu__left{
+        width: 100%;
+    }
+
+
+
+
+
+    .menu__right__box{
+        height: 35%;
+        width: 100%;
+    }
+
+    .menu__right{
+        width: 100%;
+    }
+
+    .menu__right__top{
+        margin-left: 0px;
+    }
+
+   
+}
